@@ -1,3 +1,10 @@
 body{
     font-family: 'Vidaloka', serif;
 }
+
+#symbol-input{
+    /* margin: auto; */
+    position: relative;
+    left: 25%;
+
+}
