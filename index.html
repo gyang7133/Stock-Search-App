@@ -29,10 +29,11 @@
           <br>
           <div class="text-center form-group p-3 " id="stock-form">
             <input type="text" class="form-control w-50" id="symbol-input" placeholder="Enter Stock Symbol to Add">
+            <small><a href= "https://api.iextrading.com/1.0/ref-data/symbols" class="card-link" target="_blank">Company Stock Symbol Reference</a></small><br>
 
             <!-- Create add stock search button -->
-            <button type="submit" class="btn btn-default" id="run-search">
-            <i class="fa fa-search"></i> Search & Add Stock</button>
+            <button type="submit" class="btn btn-default" id="add-stock">
+            <i class="fa fa-search"></i> Add Stock Symbol</button>
            
             <button class="btn btn-default" id="clear-all">
             <i class="fa fa-trash"></i> Clear Results</button>
@@ -40,10 +41,10 @@
     </div>
 
     <div class = "container">
-        <!-- Row for Displaying each COmpany Stock Information -->
+        <!-- Row for Displaying each Company Stock Information -->
         <div class="row">
-            <div class=" col-2 p-3 m-3 bg-secondary low" >
-                <div id="stocks-btn"></div>
+            <div class="col-2 p-3 m-3" >
+                <div id="stocks-btn-list"></div>
             </div>
 
             <div class="col-8">
@@ -51,7 +52,7 @@
             <div class="card">
                 <div class="card-header">
                 <strong id="company-name">
-                    <i class="fa fa-list-alt"></i> Company Name</strong>
+                    <i class="fa fa-list-alt"> </i></strong>
                 </div>   
             </div>
 
@@ -65,34 +66,15 @@
         </div>
     </div>
     
-    <!-- Place Holder. May delete later -->
-        <!-- This row will handle all of the retrieved articles -->
-        <div class="row">
-            <div class="col-sm-12">
-            <br>
-            <!-- This card will initially be made up of a card and wells for each of the articles retrieved for each Stock Company -->
-            <div class="card">
-    
-                <!-- card Heading for the retrieved articles box -->
-                <div class="card-header">
-                <strong>
-                    <i class="fa fa-table"></i> Top 10 Related Articles</strong>
-                </div>
-                <!-- This main card will hold each of the resulting articles -->
-                <div class="card-body" id="article-section">
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
+
     
 
     <!-- Footer Region -->
     <div class="row">
-        <div id="footer" class="navbar justify-content-center fixed-bottom col-12 bg-secondary low">
-            <p>Copyright &copy;</p>
+        <div id="footer" class="navbar justify-content-center fixed-bottom col-12 ">
+            <strong>Copyright &copy;</strong>
          </div>
-     </div>>
+     </div>
     <!-- <div class="row">
         <div class="col-sm-12">
             <hr>

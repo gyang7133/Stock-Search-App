@@ -2,9 +2,37 @@ body{
     font-family: 'Vidaloka', serif;
 }
 
+.jumbotron{
+    background-color: rgb(228, 88, 111);
+}
+
+.card-header{
+    background-color: rgb(114, 114, 114);
+}
+
+#footer{
+    background-color: rgb(114, 114, 114);
+}
+.card-body{
+    background-color: pink;
+}
 #symbol-input{
     /* margin: auto; */
     position: relative;
     left: 25%;
 
 }
+
+.text-center small{
+    font-size : 20px;
+    color: black;
+}
+
+.stock-btn btn-block{
+    background-color: rgb(228, 88, 111) !important;
+}
+
+/* #stocks-btn-list{
+    background-color: rgb(228, 88, 111) !important;
+    
+} */
