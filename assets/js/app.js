@@ -98,19 +98,19 @@ const renderStockInfo = function()
                 `);
 
             // Append and loop through the 10 News Articles related to each stock company
-            for (let i = 0; i < response.news.length; i++) 
+            for (let i = 0; i < stockNews.length; i++) 
             {
                 $('#stocks-info').append(
                 `
                 <div class="card my-3">
-                <h5 class="card-header">Article ${i + 1}: ${response.news[i].headline}</h5>
+                <h5 class="card-header">Article ${i + 1}: ${stockNews[i].headline}</h5>
                 <div class="card-body">
                     <!-- articles get populated here -->
-                    <p class="card-text">${response.news[i].summary}</p>
+                    <p class="card-text">${stockNews[i].summary}</p>
                 </div>
                 <div class="card-footer">
                 <!-- article url population -->
-                <a href="${response.news[i].url}" class="card-link" target="_blank">Link to Article</a>
+                <a href="${stockNews[i].url}" class="card-link" target="_blank">Link to Article</a>
                 </div>
                 </div>
                 `);
