@@ -120,7 +120,7 @@ const renderStockInfo = function()
                 
 }
 
-// 3. Make a separate iexTrading API call that will retureive all stick symbols available in iexTrading and stire it into an array called validationList
+// 3. Make a separate iexTrading API call that will retreive all stick symbols available in iexTrading and store it into an array called validationList
 
 $.get('https://api.iextrading.com/1.0/ref-data/symbols', function(response)
 {
